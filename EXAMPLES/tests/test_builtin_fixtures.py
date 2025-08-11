@@ -1,5 +1,3 @@
-import pytest
-
 COUNTER_KEY = 'test_cache/counter'
 
 def test_cache(cache):  # cache persists values between test runs
