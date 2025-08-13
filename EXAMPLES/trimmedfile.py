@@ -4,6 +4,7 @@ class TrimmedFile:
 
     def __iter__(self):  
         # An iterator must implement iter(), which must return an iterator. 
+        # must return object that implements __next__()
         # Typically it returns 'self', as the generator IS the iterator
         return self
 
@@ -17,6 +18,9 @@ class TrimmedFile:
 
 if __name__ == '__main__':
     # To use the iterator, create an instance and iterate over it.
-    trimmed = TrimmedFile('../DATA/mary.txt')  
+    trimmed = TrimmedFile('../DATA/mary.txt')
+    print(trimmed)
+    print(hasattr(trimmed, '__iter__'))  
+    print(hasattr(trimmed, '__next__'))  
     for line in trimmed:
         print(line)

@@ -3,6 +3,7 @@ def trimmed(file_name):
         for line in file_in:
             yield line.rstrip('\n\r')  # 'yield' causes this function to return a generator object
 
-mary_in = trimmed('../DATA/mary.txt')
-for trimmed_line in mary_in:
-    print(trimmed_line)
+if __name__ == "__main__":
+    mary_in = trimmed('../DATA/mary.txt')
+    for trimmed_line in mary_in:
+        print(trimmed_line)

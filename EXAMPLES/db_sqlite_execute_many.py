@@ -78,7 +78,10 @@ def populate_database(conn, cursor):
         try:
             # iterate over rows of input
             # and add each row to database
-            cursor.executemany(SQL_INSERT_ROW, fruit_data)  
+            cursor.executemany(SQL_INSERT_ROW, fruit_data)
+            # same as
+            # for element in fruit_data: 
+            #     cursor.execute(SQL_INSERT_ROW, element)
         except sqlite3.DatabaseError as err:
             print(err)
             conn.rollback()
