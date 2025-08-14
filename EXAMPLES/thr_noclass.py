@@ -10,7 +10,7 @@ def my_task(num):  # function to run in each thread
         print(f"Hello from thread {num}")
 
 for i in range(16):
-    t = Thread(target=my_task, args=(i,))  # create thread
+    t = Thread(target=my_task, args=(i,), name=f"T{i}")  # create thread
     t.start()  # launch thread
 
 print("Done.")  # "Done" is printed immediately -- the threads are "in the background"

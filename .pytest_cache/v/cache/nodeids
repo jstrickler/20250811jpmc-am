@@ -1,0 +1,15 @@
+[
+  "EXAMPLES/tests/test_builtin_fixtures.py::test_cache",
+  "EXAMPLES/tests/test_builtin_fixtures.py::test_capsys",
+  "EXAMPLES/tests/test_builtin_fixtures.py::test_capsysbinary",
+  "EXAMPLES/tests/test_builtin_fixtures.py::test_temp_dir1",
+  "EXAMPLES/tests/test_builtin_fixtures.py::test_temp_dir2",
+  "EXAMPLES/tests/test_builtin_fixtures.py::test_temp_dir3",
+  "EXAMPLES/tests/test_simple.py::test_length_of_my_name",
+  "EXAMPLES/tests/test_simple.py::test_two_plus_two_equals_four",
+  "EXAMPLES/tests/test_skip.py::test_five",
+  "EXAMPLES/tests/test_skip.py::test_four",
+  "EXAMPLES/tests/test_skip.py::test_one",
+  "EXAMPLES/tests/test_skip.py::test_three",
+  "EXAMPLES/tests/test_skip.py::test_two"
+]
