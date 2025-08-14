@@ -1,6 +1,3 @@
-#
-
-
 import matplotlib
 matplotlib.use('Qt5Agg')
 import matplotlib.pyplot as plt
@@ -9,7 +6,6 @@ import seaborn as sbs
 # sbs.set_style('darkgrid')
 import numpy as np
 from numpy.random import rand
-
 
 x, y, c, s = rand(4, 100)
 
@@ -30,7 +26,7 @@ def on_pick(event):
     ind = event.ind
     x_val = np.take(x, ind)[0]
     y_val = np.take(y, ind)[0]
-    remove_annotations()
+    # remove_annotations()
     add_annotation(x_val, y_val)
     plt.draw()
     # print('onpick3 scatter:', ind, np.take(x, ind), np.take(y, ind), x_val, y_val)
